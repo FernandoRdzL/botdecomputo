@@ -16,7 +16,15 @@
   </category>
   <category>
       <pattern>* NOMBRE</pattern>
-      <template>No tengo uno</template>
+      <template>No tengo uno, ¿Cuál es el tuyo?</template>
+  </category>
+  <category>
+      <pattern>MI NOMBRE ES *</pattern>
+      <template>Mucho gusto <set name="nombre"><star></star></set></template>
+  </category>
+  <category>
+      <pattern>* NOMBRE</pattern>
+      <template></template>
   </category>
   <category>
       <pattern>NOMBRE</pattern>
@@ -27,8 +35,8 @@
       <template>Puedo decirte algunas cosas basicas de computadoras</template>
   </category>
   <category>
-      <pattern> HACER</pattern>
-      <template><srai>Puedo decirte algunas cosas basicas de computadoras</srai></template>
+      <pattern>HACER</pattern>
+      <template><srai>* HACER</srai></template>
   </category>
   <category>
       <pattern>* TIPOS * COMPUTADORAS *</pattern>
@@ -36,11 +44,11 @@
   </category>
   <category>
       <pattern>TIPOS</pattern>
-      <template><srai>Los más comunes con las de escritorio y las portatiles</srai></template>
+      <template><srai>* TIPOS</srai></template>
   </category>
   <category>
       <pattern>COMPUTADORAS</pattern>
-      <template><srai>Los más comunes con las de escritorio y las portatiles</srai></template>
+      <template><srai>* COMPUTADORAS</srai></template>
   </category>
   <category>
       <pattern>ADIOS</pattern>
