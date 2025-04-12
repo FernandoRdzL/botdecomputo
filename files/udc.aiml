@@ -23,10 +23,6 @@
       <template>Mucho gusto <set name="nombre"><star></star></set></template>
   </category>
   <category>
-      <pattern>* NOMBRE</pattern>
-      <template></template>
-  </category>
-  <category>
       <pattern>NOMBRE</pattern>
       <template><srai>* NOMBRE</srai></template>
   </category>
