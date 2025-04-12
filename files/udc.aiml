@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>No comprendí tu pregunta, podrias explicarlo de manera distinta?</template>
+  </category>
+  <category>
+      <pattern>HOLA</pattern>
+      <template>
+          <random>
+              <li>Hola</li>
+              <li>Mucho gusto</li>
+              <li>Hola, mucho gusto</li>
+          </random>
+      </template>
+  </category>
+  <category>
+      <pattern>* NOMBRE</pattern>
+      <template>No tengo uno</template>
+  </category>
+  <category>
+      <pattern>NOMBRE</pattern>
+      <template><srai>* NOMBRE</srai></template>
+  </category>
+  <category>
+      <pattern>* HACER</pattern>
+      <template>Puedo decirte algunas cosas basicas de computadoras</template>
+  </category>
+  <category>
+      <pattern> HACER</pattern>
+      <template><srai>Puedo decirte algunas cosas basicas de computadoras</srai></template>
+  </category>
+  <category>
+      <pattern>* TIPOS * COMPUTADORAS *</pattern>
+      <template>Los más comunes con las de escritorio y las portatiles</template>
+  </category>
+  <category>
+      <pattern>TIPOS</pattern>
+      <template><srai>Los más comunes con las de escritorio y las portatiles</srai></template>
+  </category>
+  <category>
+      <pattern>COMPUTADORAS</pattern>
+      <template><srai>Los más comunes con las de escritorio y las portatiles</srai></template>
+  </category>
+  <category>
+      <pattern>ADIOS</pattern>
+      <template>Hasta luego :)</template>
+  </category>
+</aiml>
